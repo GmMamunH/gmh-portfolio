@@ -52,8 +52,7 @@ const SocialLink = () => {
           Cakrir Khoj App <FaGooglePlay size={30} />
         </>
       ),
-      href: "https://drive.usercontent.google.com/download?id=1pX2n3gZuak6AZ61Hdhz7iNP5AlBga2Ea&export=download&authuser=0",
-      style: "rounded-br-md",
+      href: "./CakrirKhoj.apk",
       download: true,
     },
   ];

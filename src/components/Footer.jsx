@@ -61,7 +61,7 @@ const Footer = () => {
           <FaGooglePlay size={20} />
         </>
       ),
-      href: "https://drive.usercontent.google.com/download?id=1pX2n3gZuak6AZ61Hdhz7iNP5AlBga2Ea&export=download&authuser=0",
+      href: "./CakrirKhoj.apk",
       download: true,
     },
   ];
