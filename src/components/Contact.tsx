@@ -34,14 +34,13 @@ export default function Contact() {
 
           <textarea
             name="message"
-            rows="10"
             placeholder="Enter your message"
             required
             className="p-2 border-2 rounded-md focus:outline-none bg-transparent text-white"
           ></textarea>
 
           <button className=" flex justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer px-6 py-3 my-6 rounded-md text-2xl text-white hover:scale-110 duration-300">
-            Let's Talk
+            Let&apos;s Talk
           </button>
         </form>
       </div>
