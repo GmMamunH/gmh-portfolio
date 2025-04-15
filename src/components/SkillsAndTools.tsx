@@ -24,6 +24,8 @@ export default function SkillsAndTools() {
     { id: 9, title: "Java", style: "w-[75%] ", percentage: "75%" },
     { id: 10, title: "PHP", style: "w-[60%] ", percentage: "60%" },
     { id: 11, title: "MySQL", style: "w-[50%]", percentage: "50%" },
+    { id: 12, title: "TypeScript", style: "w-[70%]", percentage: "70%" },
+    { id: 13, title: "Next.js", style: "w-[80%]", percentage: "80%" },
   ];
   return (
     <div className="h-full w-full bg-gray-800 px-3  py-16 md:px-6 ">
