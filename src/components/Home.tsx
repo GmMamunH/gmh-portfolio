@@ -15,9 +15,9 @@ export default function HomeComponent() {
               preRenderFirstString={true}
               sequence={[
                 500,
-                "I'm An Android App Developer.", // initially rendered starting point
+                "I'm An Android App Developer.",
                 1000,
-                "I'm A Full Stack Web Developer.",
+                "I'm A Frontend-Focused MERN Stack Developer.",
                 1000,
               ]}
               speed={50}
@@ -56,7 +56,7 @@ export default function HomeComponent() {
         <div>
           <Image
             src={heroImage}
-            alt="GmMamunH"
+            alt="GmMamunH-MdMamunHossain"
             width={500}
             height={500}
             className="rounded-2xl mx-auto"
