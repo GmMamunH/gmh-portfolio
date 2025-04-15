@@ -6,12 +6,12 @@ import { FaBars, FaTimes } from "react-icons/fa";
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const links = [
-    { id: 1, link: "home" },
-    { id: 2, link: "about" },
-    { id: 3, link: "portfolio" },
-    { id: 4, link: "experience" },
-    { id: 5, link: "skill" },
-    { id: 6, link: "contact" },
+    { id: 1, link: "/", catName: "home" },
+    { id: 2, link: "about", catName: "about" },
+    { id: 3, link: "portfolio", catName: "portfolio" },
+    { id: 4, link: "experience", catName: "experience" },
+    { id: 5, link: "skill", catName: "skill" },
+    { id: 6, link: "contact", catName: "contact" },
   ];
   return (
     <div className=" flex justify-between items-center w-full h-20 z-50 bg-slate-600 text-white fixed px-3 md:px-6">
@@ -26,13 +26,13 @@ export default function Navbar() {
       {/* ===================== logo end ======================= */}
 
       <ul className="hidden md:flex md:gap-10 ">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link, catName }) => (
           <li
             key={id}
             className="cursor-pointer text-white font-medium capitalize hover:scale-110 duration-500 "
           >
             <Link href={link} smooth duration={500}>
-              {link}
+              {catName}
             </Link>
           </li>
         ))}

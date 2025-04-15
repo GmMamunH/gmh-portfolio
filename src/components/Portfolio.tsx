@@ -1,0 +1,100 @@
+import heroImg from "@/assets/images/logo/GmMamunH.jpg";
+import Image from "next/image";
+export default function PortfolioComponent(second) {
+  const project = [
+    {
+      id: 1,
+      src: heroImg,
+      imgStyle: "bg-white",
+      demo: "https://gmmamunh.vercel.app/",
+      code: "https://github.com/GmMamunH/gmh-portfolio",
+    },
+    {
+      id: 2,
+      src: heroImg,
+      imgStyle: "bg-white",
+      demo: "https://gmmamunh.vercel.app/",
+      code: "https://github.com/GmMamunH/gmh-portfolio",
+    },
+    {
+      id: 3,
+      src: heroImg,
+      imgStyle: "bg-white",
+      demo: "https://gmmamunh.vercel.app/",
+      code: "https://github.com/GmMamunH/gmh-portfolio",
+    },
+    {
+      id: 4,
+      src: heroImg,
+      imgStyle: "bg-white",
+      demo: "https://gm-mamun-h.web.app/",
+      code: "https://github.com/GmMamunH/gm-mamun-h-portfolio",
+    },
+    {
+      id: 5,
+      src: heroImg,
+      imgStyle: "bg-white",
+      demo: "https://gmmamunh.vercel.app/",
+      code: "https://github.com/GmMamunH/gmh-portfolio",
+    },
+    {
+      id: 6,
+      src: heroImg,
+      imgStyle: "bg-white",
+      demo: "https://gmmamunh.vercel.app/",
+      code: "https://github.com/GmMamunH/gmh-portfolio",
+    },
+  ];
+  return (
+    <div
+      name="portfolio"
+      className=" h-full w-full bg-gray-800 px-3  py-16 md:px-6"
+    >
+      <div className="text-center py-6 text-white">
+        <p className="text-4xl border-b-4 border-gray-500 inline  font-bold">
+          Portfolio
+        </p>
+        <p className="text-2xl py-4">Check out some of my work right here</p>
+      </div>
+      <div className="grid grid-cols-1  md:grid-cols-3 gap-10 max-w-screen-lg mx-auto ">
+        {project.map(({ id, src, demo, code, imgStyle }) => (
+          <div key={id}>
+            <div
+              className={`shadow-lg shadow-cyan-500/50 rounded-lg ${imgStyle}`}
+            >
+              <div>
+                <Image
+                  src={src}
+                  alt="GmMamunH"
+                  width={500}
+                  height={500}
+                  className="rounded-2xl mx-auto"
+                />
+
+                <div className="flex justify-between items-center gap-10">
+                  <a
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer px-6 py-3 rounded-bl-md text-2xl hover:font-bold duration-500"
+                    href={demo}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer px-6 py-3 rounded-br-md text-2xl hover:font-bold duration-500"
+                    href={code}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

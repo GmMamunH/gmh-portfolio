@@ -54,7 +54,7 @@ export default function AboutComponent() {
   };
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div name="about" className="h-full w-full bg-gray-800 py-16 px-3 md:px-6">
+    <div  className="h-full w-full bg-gray-800 py-16 px-3 md:px-6">
       <div className="text-center py-6 text-white">
         <p className="text-4xl border-b-4 border-gray-500 inline font-bold">
           About Me
