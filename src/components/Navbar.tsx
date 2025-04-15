@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <div className=" flex justify-between items-center w-full h-20 z-50 bg-slate-600 text-white fixed px-3 md:px-6">
       <Link
-        href="home"
+        href="/"
         smooth
         duration={500}
         className="text-3xl font-logoFont font-bold italic cursor-pointer capitalize hover:scale-105 hover:text-red-700 duration-500"
