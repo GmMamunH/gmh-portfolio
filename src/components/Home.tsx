@@ -4,11 +4,18 @@ import Link from "next/link";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 import { TypeAnimation } from "react-type-animation";
 import heroImage from "@/assets/images/logo/GmMamunH.jpg";
+import { motion } from "framer-motion";
 
 export default function HomeComponent() {
   return (
     <div className="h-full pt-32 pb-12 bg-gray-800 px-3 md:px-6">
-      <div className="flex flex-col justify-between items-center gap-10  md:flex-row max-w-screen-lg mx-auto ">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="flex flex-col justify-between items-center gap-10  md:flex-row max-w-screen-lg mx-auto "
+      >
         <div className=" text-center text-white">
           <h1 className="text-3xl text-white font-bold md:text-4xl">
             <TypeAnimation
@@ -17,7 +24,7 @@ export default function HomeComponent() {
                 500,
                 "I'm An Android App Developer.",
                 1000,
-                "I'm A Frontend-Focused MERN Stack Developer.",
+                "I'm A Frontend-Focused MERN Stack Developer",
                 1000,
               ]}
               speed={50}
@@ -56,13 +63,13 @@ export default function HomeComponent() {
         <div>
           <Image
             src={heroImage}
-            alt="GmMamunH-MdMamunHossain"
+            alt="GmMamunH"
             width={500}
             height={500}
             className="rounded-2xl mx-auto"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

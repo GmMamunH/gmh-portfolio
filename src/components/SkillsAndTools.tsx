@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function SkillsAndTools() {
   const skills = [
     { id: 1, title: "HTML", style: "w-[90%] ", percentage: "90%" },
@@ -24,15 +27,27 @@ export default function SkillsAndTools() {
   ];
   return (
     <div className="h-full w-full bg-gray-800 px-3  py-16 md:px-6 ">
-      <div className="text-center py-6 text-white">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="text-center py-6 text-white"
+      >
         <p className="text-2xl border-b-4 border-gray-500 inline">
           {" "}
           Why Choose Me{" "}
         </p>
         <p className="text-4xl  py-4 font-bold">My Experience Area</p>
-      </div>
+      </motion.div>
 
-      <div className="grid grid-cols-2 text-6xl  md:grid-cols-3 md:text-9xl text-white gap-10 max-w-screen-lg mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="grid grid-cols-2 text-6xl  md:grid-cols-3 md:text-9xl text-white gap-10 max-w-screen-lg mx-auto"
+      >
         {skills.map(({ id, title, style, percentage }) => (
           <div key={id} className="mb-1 text-base font-medium dark:text-white">
             <div className="flex justify-between py-3">
@@ -49,7 +64,7 @@ export default function SkillsAndTools() {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

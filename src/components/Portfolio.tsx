@@ -1,5 +1,8 @@
+"use client";
 import heroImg from "@/assets/images/logo/GmMamunH.jpg";
 import Image from "next/image";
+
+import { motion } from "framer-motion";
 export default function PortfolioComponent() {
   const project = [
     {
@@ -46,16 +49,27 @@ export default function PortfolioComponent() {
     },
   ];
   return (
-    <div
-      className=" h-full w-full bg-gray-800 px-3  py-16 md:px-6"
-    >
-      <div className="text-center py-6 text-white">
+    <div className=" h-full w-full bg-gray-800 px-3  py-16 md:px-6">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="text-center py-6 text-white"
+      >
         <p className="text-4xl border-b-4 border-gray-500 inline  font-bold">
           Portfolio
         </p>
         <p className="text-2xl py-4">Check out some of my work right here</p>
-      </div>
-      <div className="grid grid-cols-1  md:grid-cols-3 gap-10 max-w-screen-lg mx-auto ">
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1  md:grid-cols-3 gap-10 max-w-screen-lg mx-auto "
+      >
         {project.map(({ id, src, demo, code, imgStyle }) => (
           <div key={id}>
             <div
@@ -93,7 +107,7 @@ export default function PortfolioComponent() {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

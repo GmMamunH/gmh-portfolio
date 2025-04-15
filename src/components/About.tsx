@@ -55,18 +55,18 @@ export default function AboutComponent() {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true }}
-      className="h-full w-full bg-gray-800 py-16 px-3 md:px-6"
-    >
-      <div className="text-center mb-10 py-6 text-white">
+    <div className="h-full w-full bg-gray-800 py-16 px-3 md:px-6">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="text-center mb-10 py-6 text-white"
+      >
         <h2 className="text-4xl font-bold inline border-b-4 border-cyan-400">
           About Me
         </h2>
-      </div>
+      </motion.div>
 
       <div className="flex flex-col items-center">
         <div style={isOpen ? {} : textStyle}>
@@ -102,6 +102,6 @@ export default function AboutComponent() {
           {isOpen ? "Read less..." : "Read more..."}
         </button>
       </div>
-    </motion.div>
+    </div>
   );
 }
