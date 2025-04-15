@@ -1,8 +1,6 @@
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { FaYoutube } from "react-icons/fa";
-import { FaGooglePlay } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 export default function Footer() {

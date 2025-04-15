@@ -45,14 +45,14 @@ export default function AboutComponent() {
     },
   ];
 
-  const textStyle = {
-    maxWidth: "100%",
-    display: "-webkit-box",
-    WebkitBoxOrient: "vertical",
-    WebkitLineClamp: 3,
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-  };
+  // const textStyle = {
+  //   maxWidth: "100%",
+  //   display: "-webkit-box",
+  //   WebkitBoxOrient: "vertical" as any,
+  //   WebkitLineClamp: 3,
+  //   overflow: "hidden",
+  //   textOverflow: "ellipsis",
+  // };
 
   return (
     <div className="h-full w-full bg-gray-800 py-16 px-3 md:px-6">
@@ -69,7 +69,7 @@ export default function AboutComponent() {
       </motion.div>
 
       <div className="flex flex-col items-center">
-        <div style={isOpen ? {} : textStyle}>
+        <div className={isOpen ? "" : "truncate-multiline"}>
           <div className="max-w-4xl mx-auto space-y-6">
             {about.map(({ id, title, details, details2 }) => (
               <motion.div

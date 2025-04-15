@@ -17,7 +17,6 @@
   --font-logoFont: "Playwrite PL", "cursive";
   --font-display: "Oswald", "sans-serif";
 
-
   --animate-scroll: scroll 2s infinite linear forwards alternate;
   @keyframes scroll {
     from {
@@ -28,10 +27,16 @@
       transform: translateX(0);
     }
   }
-
-    
 }
-
+@layer components {
+  .truncate-multiline {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
