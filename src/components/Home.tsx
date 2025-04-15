@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 import { TypeAnimation } from "react-type-animation";
-import heroImage from "@/assets/images/logo/GmMamunH.jpg"
+import heroImage from "@/assets/images/logo/GmMamunH.jpg";
 
 export default function HomeComponent() {
   return (
@@ -30,14 +30,22 @@ export default function HomeComponent() {
             With a passion for technology and a keen interest in programming, I
             have dedicated myself to the world of software development.
           </p>
-          <div>
+          <div className="flex items-center gap-2">
             <Link
               href="portfolio"
-              smooth
-              duration={500}
               className="group w-fit flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer px-6 py-3 rounded-md text-2xl"
             >
               Portfolio
+              <span className="group-hover:rotate-90 duration-300">
+                <RiArrowRightDoubleLine />
+              </span>
+            </Link>
+            <Link
+              href="https://drive.google.com/file/d/1Cp6GhqOTVFGBcKPeoeMTsCdXhR1nJYYH/view?usp=drive_link"
+              target="_blank"
+              className="group w-fit flex items-center bg-gradient-to-l from-cyan-500 to-blue-500 cursor-pointer px-6 py-3 rounded-md text-2xl"
+            >
+              Resume
               <span className="group-hover:rotate-90 duration-300">
                 <RiArrowRightDoubleLine />
               </span>

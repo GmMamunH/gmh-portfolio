@@ -1,6 +1,6 @@
 import heroImg from "@/assets/images/logo/GmMamunH.jpg";
 import Image from "next/image";
-export default function PortfolioComponent(second) {
+export default function PortfolioComponent() {
   const project = [
     {
       id: 1,
@@ -47,7 +47,6 @@ export default function PortfolioComponent(second) {
   ];
   return (
     <div
-      name="portfolio"
       className=" h-full w-full bg-gray-800 px-3  py-16 md:px-6"
     >
       <div className="text-center py-6 text-white">
