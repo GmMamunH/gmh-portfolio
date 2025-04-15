@@ -45,15 +45,6 @@ export default function AboutComponent() {
     },
   ];
 
-  // const textStyle = {
-  //   maxWidth: "100%",
-  //   display: "-webkit-box",
-  //   WebkitBoxOrient: "vertical" as any,
-  //   WebkitLineClamp: 3,
-  //   overflow: "hidden",
-  //   textOverflow: "ellipsis",
-  // };
-
   return (
     <div className="h-full w-full bg-gray-800 py-16 px-3 md:px-6">
       <motion.div

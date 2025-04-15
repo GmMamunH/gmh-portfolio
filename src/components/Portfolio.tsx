@@ -9,8 +9,8 @@ export default function PortfolioComponent() {
       id: 1,
       src: heroImg,
       imgStyle: "bg-white",
-      demo: "https://gmmamunh.vercel.app/",
-      code: "https://github.com/GmMamunH/gmh-portfolio",
+      demo: "https://edust.org/",
+      code: "https://github.com/GmMamunH/edust",
     },
     {
       id: 2,
