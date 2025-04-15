@@ -1,5 +1,6 @@
 "use client";
-import heroImg from "@/assets/images/logo/GmMamunH.jpg";
+import edust from "@/assets/images/portfolio/edust-project.png";
+import debhub from "@/assets/images/portfolio/devhub.png";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
@@ -7,45 +8,17 @@ export default function PortfolioComponent() {
   const project = [
     {
       id: 1,
-      src: heroImg,
+      src: edust,
       imgStyle: "bg-white",
-      demo: "https://gmmamunh.vercel.app/",
-      code: "https://github.com/GmMamunH/gmh-portfolio",
+      demo: "https://edust.org/",
+      code: "https://github.com/GmMamunH/edust",
     },
     {
       id: 2,
-      src: heroImg,
+      src: debhub,
       imgStyle: "bg-white",
-      demo: "https://gmmamunh.vercel.app/",
-      code: "https://github.com/GmMamunH/gmh-portfolio",
-    },
-    {
-      id: 3,
-      src: heroImg,
-      imgStyle: "bg-white",
-      demo: "https://gmmamunh.vercel.app/",
-      code: "https://github.com/GmMamunH/gmh-portfolio",
-    },
-    {
-      id: 4,
-      src: heroImg,
-      imgStyle: "bg-white",
-      demo: "https://gm-mamun-h.web.app/",
-      code: "https://github.com/GmMamunH/gm-mamun-h-portfolio",
-    },
-    {
-      id: 5,
-      src: heroImg,
-      imgStyle: "bg-white",
-      demo: "https://gmmamunh.vercel.app/",
-      code: "https://github.com/GmMamunH/gmh-portfolio",
-    },
-    {
-      id: 6,
-      src: heroImg,
-      imgStyle: "bg-white",
-      demo: "https://gmmamunh.vercel.app/",
-      code: "https://github.com/GmMamunH/gmh-portfolio",
+      demo: "https://github.com/GmMamunH/DevHub",
+      code: "https://github.com/GmMamunH/DevHub",
     },
   ];
   return (
