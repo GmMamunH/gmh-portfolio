@@ -1,6 +1,7 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 
-const Skill = () => {
+export default function SkillsAndTools() {
   const skills = [
     { id: 1, title: "HTML", style: "w-[90%] ", percentage: "90%" },
     { id: 2, title: "CSS", style: "w-[90%] ", percentage: "90%" },
@@ -25,16 +26,28 @@ const Skill = () => {
     { id: 11, title: "MySQL", style: "w-[50%]", percentage: "50%" },
   ];
   return (
-    <div
-      name="skill"
-      className="h-full w-full bg-gray-800 px-3  py-16 md:px-6 "
-    >
-      <div className="text-center py-6 text-white">
-        <p className="text-2xl border-b-4 border-gray-500 inline"> Why Choose Me </p>
+    <div className="h-full w-full bg-gray-800 px-3  py-16 md:px-6 ">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="text-center py-6 text-white"
+      >
+        <p className="text-2xl border-b-4 border-gray-500 inline">
+          {" "}
+          Why Choose Me{" "}
+        </p>
         <p className="text-4xl  py-4 font-bold">My Experience Area</p>
-      </div>
+      </motion.div>
 
-      <div className="grid grid-cols-2 text-6xl  md:grid-cols-3 md:text-9xl text-white gap-10 max-w-screen-lg mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="grid grid-cols-2 text-6xl  md:grid-cols-3 md:text-9xl text-white gap-10 max-w-screen-lg mx-auto"
+      >
         {skills.map(({ id, title, style, percentage }) => (
           <div key={id} className="mb-1 text-base font-medium dark:text-white">
             <div className="flex justify-between py-3">
@@ -51,9 +64,7 @@ const Skill = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
-};
-
-export default Skill;
+}
