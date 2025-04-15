@@ -1,0 +1,60 @@
+"use client"
+import Image from "next/image";
+import Link from "next/link";
+import { RiArrowRightDoubleLine } from "react-icons/ri";
+import { TypeAnimation } from "react-type-animation";
+import heroImage from "@/assets/images/logo/GmMamunH.jpg"
+
+export default function HomeComponent() {
+  return (
+    <div className="h-full pt-32 pb-12 bg-gray-800 px-3 md:px-6">
+      <div className="flex flex-col justify-between items-center gap-10  md:flex-row max-w-screen-lg mx-auto ">
+        <div className=" text-center text-white">
+          <h1 className="text-3xl text-white font-bold md:text-4xl">
+            <TypeAnimation
+              preRenderFirstString={true}
+              sequence={[
+                500,
+                "I'm An Android App Developer.", // initially rendered starting point
+                1000,
+                "I'm A Full Stack Web Developer.",
+                1000,
+              ]}
+              speed={50}
+              style={{ fontSize: "2em" }}
+              repeat={Infinity}
+            />
+          </h1>
+          {/* ======= */}
+          <p className="text-2xl text-justify my-6 md:text-3xl">
+            With a passion for technology and a keen interest in programming, I
+            have dedicated myself to the world of software development.
+          </p>
+          <div>
+            <Link
+              href="portfolio"
+              smooth
+              duration={500}
+              className="group w-fit flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer px-6 py-3 rounded-md text-2xl"
+            >
+              Portfolio
+              <span className="group-hover:rotate-90 duration-300">
+                <RiArrowRightDoubleLine />
+              </span>
+            </Link>
+          </div>
+        </div>
+        {/* ============================== */}
+        <div>
+          <Image
+            src={heroImage}
+            alt="GmMamunH"
+            width={500}
+            height={500}
+            className="rounded-2xl mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
