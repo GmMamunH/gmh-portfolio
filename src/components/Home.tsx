@@ -13,7 +13,7 @@ export default function HomeComponent() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="flex flex-col justify-between items-center gap-10  md:flex-row max-w-screen-lg mx-auto "
       >
         <div className=" text-center text-white">

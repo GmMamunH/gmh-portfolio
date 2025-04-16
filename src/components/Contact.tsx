@@ -12,7 +12,7 @@ export default function Contact() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="text-center py-6 text-white"
       >
         <p className="text-4xl border-b-4 border-gray-500 inline font-bold">
@@ -24,7 +24,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="flex justify-center items-center border shadow-lg p-6 rounded-2xl w-full md:w-1/2"
         >
           <form
@@ -68,7 +68,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="border shadow-lg px-6 py-6 md:py-30 rounded-2xl w-full md:w-1/2"
         >
           <div className="flex flex-col gap-3">

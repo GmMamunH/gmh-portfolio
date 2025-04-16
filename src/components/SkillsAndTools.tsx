@@ -33,7 +33,7 @@ export default function SkillsAndTools() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="text-center py-6 text-white"
       >
         <p className="text-2xl border-b-4 border-gray-500 inline">
@@ -47,11 +47,15 @@ export default function SkillsAndTools() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="grid grid-cols-2 text-6xl  md:grid-cols-3 md:text-9xl text-white gap-10 max-w-screen-lg mx-auto"
       >
         {skills.map(({ id, title, style, percentage }) => (
-          <div key={id} className="mb-1 text-base font-medium dark:text-white">
+          <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false }} key={id} className="mb-1 text-base font-medium dark:text-white">
             <div className="flex justify-between py-3">
               <p>{title}</p> <p>{percentage}</p>
             </div>
@@ -64,7 +68,7 @@ export default function SkillsAndTools() {
                 className={`animate-scroll absolute inset-0  bg-gradient-to-l from-green-500 to-red-500 h-2.5 rounded-full  ${style}`}
               ></div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </div>

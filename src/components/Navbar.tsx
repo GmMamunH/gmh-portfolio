@@ -4,6 +4,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+import { motion } from "framer-motion";
+
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
@@ -58,7 +60,11 @@ export default function Navbar() {
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white">
           {links.map(({ id, link, catName }) => (
-            <li
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false }}
               key={id}
               className="px-6 cursor-pointer text-white font-medium capitalize py-5"
             >
@@ -73,7 +79,7 @@ export default function Navbar() {
               >
                 {catName}
               </Link>
-            </li>
+            </motion.div>
           ))}
         </ul>
       )}

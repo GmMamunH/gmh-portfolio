@@ -35,7 +35,7 @@ export default function PortfolioComponent() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="text-center py-6 text-white"
       >
         <p className="text-4xl border-b-4 border-gray-500 inline  font-bold">
@@ -48,11 +48,17 @@ export default function PortfolioComponent() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="grid grid-cols-1  md:grid-cols-3 gap-10 max-w-screen-lg  mx-auto "
       >
         {project.map(({ id, src, demo, code, imgStyle }) => (
-          <div key={id}>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false }}
+            key={id}
+          >
             <div
               className={`shadow-lg shadow-cyan-500/50 rounded-lg ${imgStyle}`}
             >
@@ -86,7 +92,7 @@ export default function PortfolioComponent() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </div>
