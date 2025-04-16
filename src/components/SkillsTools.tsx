@@ -55,7 +55,7 @@ export default function SkillsTools() {
       img: redux,
     },
     {
-      title: "Next",
+      title: "Next.js",
       description: "React framework designed for building web applications.",
       img: next,
     },
@@ -98,46 +98,55 @@ export default function SkillsTools() {
       description: "JSON Web Token for secure authentication.",
       img: jwt,
     },
+    {
+      title: "Next.js",
+      description:
+        "React framework that provides both frontend and backend capabilities.",
+      img: next,
+    },
   ];
   const tools = [
     {
       title: "VS Code",
-      description: "Markup language for creating web pages.",
+      description: "Powerful and widely used code editor.",
       img: vsc,
     },
     {
       title: "Figma",
-      description: "Style sheets language used for web design.",
+      description: "Collaborative, web-based interface design tool.",
       img: figma,
     },
     {
       title: "Notion",
-      description: "Programming language for dynamic content.",
+      description: "Versatile, all-in-one workspace and organizational tool.",
       img: notion,
     },
     {
       title: "Git",
-      description: "Programming language for dynamic content.",
+      description: "Distributed version control system.",
       img: git,
     },
     {
       title: "GitHub",
-      description: "Programming language for dynamic content.",
+      description:
+        "Software developers to store, manage, and collaborate on code projects.",
       img: github,
     },
     {
       title: "Vercel",
-      description: "Programming language for dynamic content.",
+      description: "Cloud platform for deploying and hosting web applications.",
       img: vercel,
     },
     {
       title: "Firebase",
-      description: "Programming language for dynamic content.",
+      description:
+        "globally distributed, fast, and secure hosting service provided",
       img: firebase,
     },
     {
       title: "Netlify",
-      description: "Programming language for dynamic content.",
+      description:
+        "Automates the building, deployment, and management of websites.",
       img: netlify,
     },
   ];

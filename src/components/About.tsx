@@ -17,7 +17,7 @@ export default function AboutComponent() {
       details:
         "In Android development, I excel in building high-performance, user-friendly apps using Java and Kotlin. I design and implement elegant UI/UX and optimized performance with Android SDK.",
       details2:
-        "As a full stack web developer, I work with HTML, CSS, JavaScript, React, Next.js, Node.js, Express.js, and MongoDB. This allows me to build complete, scalable, and modern web applications from scratch.",
+        "As a full stack web developer, I work with HTML, CSS, JavaScript, React, Redux, TypeScript, Next.js, Node.js, Express.js, and MongoDB. This allows me to build complete, scalable, and modern web applications from scratch.",
     },
     {
       id: 3,
