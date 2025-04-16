@@ -1,3 +1,4 @@
+
 import AboutPage from "./(root)/about/page";
 import ContactPage from "./(root)/contact/page";
 import HomePage from "./(root)/home/page";
@@ -9,8 +10,8 @@ export default function Home() {
     <>
       <HomePage />
       <AboutPage />
-      <PortfolioPage />
       <SkillPage />
+      <PortfolioPage />
       <ContactPage />
     </>
   );

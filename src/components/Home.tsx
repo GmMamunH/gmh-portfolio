@@ -22,9 +22,9 @@ export default function HomeComponent() {
               preRenderFirstString={true}
               sequence={[
                 500,
-                "I'm An Android App Developer.",
-                1000,
                 "I'm A Frontend-Focused MERN Stack Developer",
+                1000,
+                "I'm An Android App Developer.",
                 1000,
               ]}
               speed={50}

@@ -13,8 +13,8 @@ export default function Navbar() {
   const links = [
     { id: 1, link: "/", catName: "home" },
     { id: 2, link: "/about", catName: "about" },
-    { id: 3, link: "/portfolio", catName: "portfolio" },
-    { id: 4, link: "/skills", catName: "Skills & Tools" },
+    { id: 3, link: "/skills", catName: "Skills & Tools" },
+    { id: 4, link: "/portfolio", catName: "portfolio" },
     { id: 5, link: "/contact", catName: "contact" },
   ];
 
