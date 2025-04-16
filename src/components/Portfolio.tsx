@@ -1,6 +1,7 @@
 "use client";
 import edust from "@/assets/images/portfolio/edust-project.png";
 import debhub from "@/assets/images/portfolio/devhub.png";
+import nextCrud from "@/assets/images/portfolio/next-crud.png";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
@@ -19,6 +20,13 @@ export default function PortfolioComponent() {
       imgStyle: "bg-white",
       demo: "https://github.com/GmMamunH/DevHub",
       code: "https://github.com/GmMamunH/DevHub",
+    },
+    {
+      id: 3,
+      src: nextCrud,
+      imgStyle: "bg-white",
+      demo: "https://crud-app-nextjs15.vercel.app/",
+      code: "https://github.com/GmMamunH/crudapp-nextjs15",
     },
   ];
   return (
@@ -41,7 +49,7 @@ export default function PortfolioComponent() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="grid grid-cols-1  md:grid-cols-3 gap-10 max-w-screen-lg mx-auto "
+        className="grid grid-cols-1  md:grid-cols-3 gap-10 max-w-screen-lg  mx-auto "
       >
         {project.map(({ id, src, demo, code, imgStyle }) => (
           <div key={id}>
