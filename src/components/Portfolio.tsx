@@ -49,7 +49,7 @@ export default function PortfolioComponent() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: false }}
-        className="grid grid-cols-1  md:grid-cols-3 gap-10 max-w-screen-lg  mx-auto "
+        className="grid grid-cols-1  md:grid-cols-3 gap-10 items-baseline max-w-screen-lg  mx-auto "
       >
         {project.map(({ id, src, demo, code, imgStyle }) => (
           <motion.div

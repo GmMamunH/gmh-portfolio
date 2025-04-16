@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaSquareWhatsapp } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 export default function Contact() {
@@ -13,13 +13,13 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: false }}
-        className="text-center py-6 text-white"
+        className="text-center pt-6 pb-10 text-white"
       >
         <p className="text-4xl border-b-4 border-gray-500 inline font-bold">
           Contact
         </p>
       </motion.div>
-      <div className="flex md:flex-row flex-col-reverse gap-5 items-center justify-between">
+      <div className="flex md:flex-row flex-col-reverse  gap-5 md:gap-20 items-center justify-between">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false }}
-          className="border shadow-lg px-6 py-6 md:py-30 rounded-2xl w-full md:w-1/2"
+          className="border shadow-lg px-6 py-6 md:py-20 rounded-2xl w-full md:w-1/2"
         >
           <div className="flex flex-col gap-3">
             <h1 className="text-2xl font-bold">Get in touch</h1>
@@ -78,20 +78,38 @@ export default function Contact() {
               <span>Narail, Khulna, Bangladesh</span>
             </p>
             <p className="flex items-center gap-2">
-              <MdEmail color="#7eaaff" size={24} />
+              <MdEmail color="#4285F4" size={24} />
               <span>gmmamun3004@gmail.com</span>
             </p>
             <p className="flex items-center gap-2">
-              <FaSquareWhatsapp color="#7eaaff" size={24} />
+              <FaSquareWhatsapp color="#25D363" size={24} />
               <span>(+880) 1406-566242</span>
             </p>
+            <Link
+              href="https://github.com/GmMamunH"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2"
+            >
+              <FaGithub color=" #3b5998" size={24} />
+              <span>/GmMamunH</span>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/gmmamunh/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2"
+            >
+             <FaLinkedin color=" #3b5998" size={24} />
+              <span>/in/gmmamunh</span>
+            </Link>
             <Link
               href="https://www.facebook.com/GmMamunH1"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2"
             >
-              <FaFacebookSquare color="#7eaaff" size={24} />
+              <FaFacebookSquare color=" #3b5998" size={24} />
               <span>/GmMamunH1</span>
             </Link>
           </div>
