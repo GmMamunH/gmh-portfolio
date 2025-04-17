@@ -16,7 +16,11 @@ export default function HomeComponent() {
         viewport={{ once: false }}
         className="flex flex-col justify-between items-center gap-10  md:flex-row max-w-screen-lg mx-auto "
       >
-        <div className=" text-center text-white">
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false }} className=" text-center text-white">
           <h1 className="text-3xl text-white font-bold md:text-4xl">
             <TypeAnimation
               preRenderFirstString={true}
@@ -58,9 +62,13 @@ export default function HomeComponent() {
               </span>
             </Link>
           </div>
-        </div>
+        </motion.div>
         {/* ============================== */}
-        <div>
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false }}>
           <Image
             src={heroImage}
             alt="GmMamunH"
@@ -68,7 +76,7 @@ export default function HomeComponent() {
             height={500}
             className="rounded-2xl mx-auto"
           />
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );

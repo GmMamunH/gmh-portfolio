@@ -72,7 +72,7 @@ export default function SkillsTools() {
     {
       title: "Shadcn UI",
       description:
-        "reusable React components focused on accessibility, customization, and developer control.",
+        "Reusable React components focused on accessibility, customization, and developer control.",
       img: shadcn,
     },
   ];
@@ -140,7 +140,7 @@ export default function SkillsTools() {
     {
       title: "Firebase",
       description:
-        "globally distributed, fast, and secure hosting service provided",
+        "Globally distributed, fast, and secure hosting service provided",
       img: firebase,
     },
     {
