@@ -17,18 +17,20 @@ export default function HomeComponent() {
         className="flex flex-col justify-between items-center gap-10  md:flex-row max-w-screen-lg mx-auto "
       >
         <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: false }} className=" text-center text-white">
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false }}
+          className=" text-center text-white"
+        >
           <h1 className="text-3xl text-white font-bold md:text-4xl">
             <TypeAnimation
               preRenderFirstString={true}
               sequence={[
                 500,
-                "I'm A Frontend-Focused MERN Stack Developer",
+                "Full-Stack Mobile & Web Developer",
                 1000,
-                "I'm An Android App Developer.",
+                "(React.js | Next.js | React Native CLI | Android Native (Java))",
                 1000,
               ]}
               speed={50}
@@ -65,10 +67,11 @@ export default function HomeComponent() {
         </motion.div>
         {/* ============================== */}
         <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: false }}>
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false }}
+        >
           <Image
             src={heroImage}
             alt="GmMamunH"

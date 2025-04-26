@@ -3,6 +3,8 @@ import html from "@/assets/images/skills/html.png";
 import css from "@/assets/images/skills/css.png";
 import js from "@/assets/images/skills/Java-Script.png";
 import react from "@/assets/images/skills/React.png";
+import java from "@/assets/images/skills/java.png";
+import php from "@/assets/images/skills/php.png";
 import redux from "@/assets/images/skills/redux.png";
 import next from "@/assets/images/skills/next.png";
 import typescript from "@/assets/images/skills/typescript.svg";
@@ -28,6 +30,26 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function SkillsTools() {
+  const appDev = [
+    {
+      title: "React Native",
+      description:
+        "A JavaScript framework for building cross-platform mobile apps (for iOS and Android) using a shared codebase.",
+      img: react,
+    },
+    {
+      title: "Java",
+      description:
+        "A widely used, object-oriented programming language and software platform.",
+      img: java,
+    },
+    {
+      title: "PHP",
+      description:
+        "A popular, open-source scripting language used for web development.",
+      img: php,
+    },
+  ];
   const frontend = [
     {
       title: "HTML",
@@ -49,6 +71,7 @@ export default function SkillsTools() {
       description: "Library for building user interfaces.",
       img: react,
     },
+
     {
       title: "Redux",
       description: "Predictable state container for JavaScript applications.",
@@ -164,6 +187,39 @@ export default function SkillsTools() {
           <p className="text-4xl border-b-4 border-gray-500 inline  font-bold">
             SkillS And Tools
           </p>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false }}
+        >
+          <p className="text-3xl py-8 text-center font-bold">App Development</p>
+          <section className="grid grid-cols-1  md:grid-cols-5 items-baseline gap-10 max-w-screen-lg justify-center mx-auto ">
+            {appDev.map(({ title, description, img }, index) => (
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: false }}
+                key={index}
+              >
+                <div className={`shadow-lg shadow-cyan-500/50 rounded-lg`}>
+                  <div className="text-center p-4 flex flex-col gap-2">
+                    <Image
+                      src={img}
+                      alt={title}
+                      width={48}
+                      height={48}
+                      className="rounded-2xl mx-auto"
+                    />
+                    <p className="text-white">{title}</p>
+                    <p className="text-sm line-clamp-2">{description}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </section>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
