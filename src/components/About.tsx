@@ -46,7 +46,7 @@ export default function AboutComponent() {
   ];
 
   return (
-    <div className="h-full w-full bg-gray-800 py-16 px-3 md:px-6">
+    <div className="min-h-full  bg-gray-800 py-16 px-3 md:px-6">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
