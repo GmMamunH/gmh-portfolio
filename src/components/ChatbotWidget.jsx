@@ -1,5 +1,5 @@
 // components/ChatbotWidget.js
-"use client"
+"use client";
 import { useEffect } from "react";
 
 export default function ChatbotWidget() {
@@ -14,7 +14,7 @@ export default function ChatbotWidget() {
           chatbotId: "682245599e96b2026c340748",
           userId: "6810d7d8c4e197b605d8fcfb",
           appearance: {
-            name: "AboutMe",
+            name: "Assistant",
             primaryColor: "#7c8289",
             welcomeMsg: "Welcome!",
           },
